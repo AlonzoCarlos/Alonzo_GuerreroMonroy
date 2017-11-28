@@ -35,7 +35,7 @@ public class TauTau extends AdvancedRobot
 			setTurnRightRadians(Utils.normalRelativeAngle(absoluteBearing - Heading + (e.getVelocity() * 
 			Math.sin(e.getHeadingRadians() - absoluteBearing))/velocity));
 			setAhead((e.getDistance() - 140) * Direction);
-			setFire(1);
+			setFire(1.5);
 		}
 		else
 		{
@@ -50,6 +50,7 @@ public class TauTau extends AdvancedRobot
 	public void onHitByBullet(HitByBulletEvent e)
 	{
 		Direction = -Direction;
+		
 	}
  
 	public void onHitWall(HitWallEvent e)
