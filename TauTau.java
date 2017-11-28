@@ -44,7 +44,7 @@ public class TauTau extends AdvancedRobot
     		absoluteBearing) / 13.0)));
 			setTurnLeft(-90- e.getBearing());
 			setAhead((e.getDistance() - 140) * Direction);
-			setFire(2);
+			setFire(3);
 		}	
 	}
 	public void onHitByBullet(HitByBulletEvent e)
